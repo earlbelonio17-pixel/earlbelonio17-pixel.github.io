@@ -205,6 +205,7 @@ footer em{font-style:normal;color:var(--red2)}
 .x{width:40px;height:40px;border-radius:50%;border:1px solid var(--line2);background:var(--panel);color:var(--ink);font-size:20px;cursor:pointer;flex:none}
 .x:hover{border-color:var(--red2)}
 .frame{position:relative;width:100%;aspect-ratio:9/16;max-height:72vh;border-radius:18px;overflow:hidden;background:#000;border:1px solid var(--line)}
+.frame .shield{position:absolute;top:0;right:0;width:84px;height:72px;z-index:2;background:transparent}
 .frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .mhooks{display:flex;gap:6px;flex-wrap:wrap}
 .mfoot{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;font-size:12.5px;color:var(--dim)}
@@ -438,9 +439,9 @@ footer em{font-style:normal;color:var(--red2)}
       <div><h4 id="mtitle"></h4><p id="msub"></p></div>
       <button class="x" id="mclose" aria-label="Close">×</button>
     </div>
-    <div class="frame"><iframe id="mframe" title="Video player" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+    <div class="frame"><iframe id="mframe" title="Video player" allow="autoplay"></iframe><span class="shield" aria-hidden="true"></span></div>
     <div class="mhooks hooks" id="mhooks"></div>
-    <div class="mfoot"><span>Video not loading?</span><a class="btn g sm" id="mopen" href="#" target="_blank" rel="noopener">Open in Google Drive ↗</a></div>
+    <div class="mfoot"><span>View-only sample · downloads disabled</span></div>
   </div>
 </div>
 
@@ -536,7 +537,6 @@ function load(i,k){
   document.getElementById('mtitle').textContent=w.t;
   document.getElementById('msub').textContent=w.s+(w.v.length>1?` · ${w.v[k][0]}`:'');
   MF.src=`https://drive.google.com/file/d/${id}/preview`;
-  document.getElementById('mopen').href=`https://drive.google.com/file/d/${id}/view`;
   MH.innerHTML = w.v.length>1 ? w.v.map((h,j)=>`<button data-mk="${j}" class="${j===k?'on':''}">${h[0]}</button>`).join('') : '';
   M.querySelector('.frame').style.aspectRatio = w.img ? '4/5' : '9/16';
 }
@@ -550,6 +550,8 @@ document.getElementById('mclose').onclick=closeM;
 M.addEventListener('click', e=>{if(e.target===M) closeM();});
 document.addEventListener('keydown', e=>{if(e.key==='Escape'&&M.classList.contains('open')) closeM();});
 
+// block right-click save on thumbnails
+document.addEventListener('contextmenu', e=>{if(e.target.closest('.th,.frame')) e.preventDefault();});
 // reveal on scroll
 const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
