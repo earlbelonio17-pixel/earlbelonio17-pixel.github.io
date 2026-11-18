@@ -255,16 +255,16 @@ footer em{font-style:normal;color:var(--red2)}
     <div class="reveal">
       <div class="eyebrow">AI video ad editor · Philippines</div>
       <h1>Got a script?<br>I'll make it <em>hit.</em></h1>
-      <p class="lead">I turn scripts into scroll-stopping AI video ads for <strong>health, wellness, beauty and e-commerce</strong> brands: voiceover + B-roll ads, AI UGC, 3D-animated product stories and short drama ads, with multiple hooks to test.</p>
+      <p class="lead">I turn scripts into scroll-stopping AI video ads for <strong>health, wellness, beauty and e-commerce</strong> brands: skeleton and 3D-animated story ads, AI song ads, voiceover + B-roll, AI UGC and short drama ads, with multiple hooks to test.</p>
       <div class="ctas">
         <a class="btn p" href="#contact">Message me
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         <a class="btn g" href="#work">See the work</a>
       </div>
       <div class="who">
-        <div><b>30+</b>Ads in the portfolio</div>
+        <div><b>40+</b>Ads in the portfolio</div>
         <div><b>3–4</b>Hooks per ad</div>
-        <div><b>5</b>Ad styles</div>
+        <div><b>6</b>Ad styles</div>
       </div>
     </div>
     <aside class="feat reveal" aria-label="Featured work">
@@ -290,7 +290,7 @@ footer em{font-style:normal;color:var(--red2)}
   <div class="wrap">
     <div class="shead reveal">
       <div><div class="num">02 · ALL WORK</div><h2>Everything, by style.</h2></div>
-      <p>VO + B-roll, AI UGC, 3D animation, drama and static image ads, all made with an AI-first pipeline and finished by hand.</p>
+      <p>AI animation, AI song ads, VO + B-roll, AI UGC, drama and static image ads, all made with an AI-first pipeline and finished by hand.</p>
     </div>
     <div class="filters" id="filters" role="group" aria-label="Filter work"></div>
     <div class="grid" id="grid"></div>
@@ -397,7 +397,7 @@ footer em{font-style:normal;color:var(--red2)}
       <details><summary>Do I need to have a script?</summary><p>It helps, but no. Send me the product, the offer and who it's for, and I'll write hook options for you to approve first.</p></details>
       <details><summary>Are the people in the ads real?</summary><p>No. The actors and creators are AI-generated characters, locked to a consistent look across the whole ad and every hook.</p></details>
       <details><summary>How many hooks do I get?</summary><p>Usually 3 to 5 hooks per ad on the same body, so you can test openings without paying for a whole new video.</p></details>
-      <details><summary>What styles can you make?</summary><p>AI animation (including 3D product stories), voiceover + B-roll product ads, short drama ads, creator-style UGC with different avatars, and static image ads.</p></details>
+      <details><summary>What styles can you make?</summary><p>AI animation (skeleton stories and 3D product stories), Pixar-style AI song ads, voiceover + B-roll product ads, short drama ads, creator-style UGC with different avatars, and static image ads.</p></details>
       <details><summary>Why Claude MCP?</summary><p>It connects research, writing and the video models in one pipeline. Hooks, prompts and character sheets stay consistent, and I spend my time on the edit instead of copy-pasting prompts.</p></details>
       <details><summary>Can I download the samples?</summary><p>The samples here are view-only. Client work is delivered at full resolution in a private Google Drive folder.</p></details>
     </div>
@@ -449,27 +449,34 @@ footer em{font-style:normal;color:var(--red2)}
 // ---- PORTFOLIO DATA (Google Drive file IDs) ----
 // To add a video: share it in Drive as "Anyone with the link", copy the ID from its URL, and add an entry.
 const W = [
+  // ---- AI ANIMATION · HIGHLIGHTS ----
+  {t:"Elvarim Aged Garlic", s:"Skeleton story animation · 3-hook test", c:"anim", reel:1, feat:1, c1:"#5e1608",
+   v:[["Hook 1","1H-h44nzE9mu6_TYAYMZ-dVxxEFIgtjEn"],["Hook 2","1yjJ1Btt69d3IT6FYkYtLX6PY6PyUHyJ1"],["Hook 3","1tVIDUQHv2XIOkw113-VTno-6Blvinpex"]]},
+  {t:"UMAEZ", s:"Pixar-style story song ad", c:"song", reel:1, feat:1, c1:"#5a2a10", v:[["","1FrHcvJRgyL9Y8Rx7ttx5Dg05Eh1GNV0j"]]},
   // ---- VO + B-ROLL ----
   {t:"Sculptique Lymphatic Capsules", s:"VO + B-roll · 4-hook test", c:"broll", reel:1, feat:1, c1:"#6b0f1a",
    v:[["Hook 1","1cOi04bdGGElYAhZ3HNNJlDCKXWtjAD0v"],["Hook 2","16r30kTZis1uH0ELTnq4UFcCh0USj0Zk9"],["Hook 3","1ZfNsN6dkUZtzVoQ1DzvR4Nb3pkVv85QF"],["Hook 4","1TL-rN-_ln0chhJe7wuEjuYFkPm5cYaJK"]]},
   {t:"Curadose", s:"VO + B-roll · hair regrowth · 3-hook test", c:"broll", reel:1, feat:1, c1:"#6a0d18",
    v:[["Hook 1","13_8CU-VNyLDBGaHiQD_O_Z7gkksBOSKc"],["Hook 2","1ri8Cw4GjQGrQ0WgnJioK-PnINcYhDYuJ"],["Hook 3","1k73A2S-ZezYT0NZCFAaxz1u0Y6Y90XjK"]]},
-  {t:"Elliosa", s:"VO + B-roll · grip socks · 2 ads", c:"broll", reel:1, c1:"#5c1420",
+  {t:"Elliosa", s:"VO + B-roll · grip socks · 2 ads", c:"broll", c1:"#5c1420",
    v:[["Ad 1","1na6Uf7ILK_a-H8DPTb6zPFoFjub6obsN"],["Ad 2","1T3fg_1yA79aDeOOigfZbDxr1rOrOKwo-"]]},
+  {t:"Elvarim Trial", s:"VO + B-roll · expert + split screen", c:"broll", reel:1, c1:"#4a1410", v:[["","1rP4vpj9EIVRvkz_qlwMz6VcEAu4ioqOr"]]},
   {t:"Soundboks", s:"B-roll · portable speaker", c:"broll", c1:"#4e0e0a", v:[["","1bgNQnDD2NBg3GlM1D4jDcI_uc3PCZW_U"]]},
   // ---- DRAMA ----
-  {t:"Drama Ad", s:"Short drama · 3-hook test", c:"drama", reel:1, feat:1, c1:"#4a0c12",
+  {t:"Drama Ad", s:"Short drama · 3-hook test", c:"drama", reel:1, c1:"#4a0c12",
    v:[["Hook 1","1VuI-1gdUt8oaRVXWLucRJZd-3fi8Hf_o"],["Hook 2","1_3TD02TdgjQpmUNakHuXB3ykhnapMckS"],["Hook 3","16mNmktdNF5mfgcwB4oxbAUAo6qtEqMtw"]]},
   {t:"LUXESILK", s:"Short drama · beauty", c:"drama", c1:"#5a0a1e", v:[["","19orHkTtKnnW1DB68MhC1PdILxX_8CfNn"]]},
   {t:"Lysander", s:"Short drama · trial video", c:"drama", c1:"#47080f", v:[["","1sgRlS0CZ1TAofnGTYe-AzGUNDg0YlPx6"]]},
   // ---- AI ANIMATION ----
   {t:"Hale Cream", s:"3D animation · skincare story", c:"anim", reel:1, c1:"#5a0a24", v:[["","1KYvGPWSeq9Nj-QeDgM7wvuP-BMcdW88_"]]},
-  {t:"Hair Peps", s:"3D animation · mascot ad", c:"anim", reel:1, c1:"#61140e", v:[["","1SA0DVEc2701M0Up750T1-AYvJCI_To--"]]},
+  {t:"Hair Peps", s:"3D animation · mascot ad", c:"anim", c1:"#61140e", v:[["","1SA0DVEc2701M0Up750T1-AYvJCI_To--"]]},
   {t:"Elliosa 3D", s:"3D animation · activewear", c:"anim", c1:"#5c1420", v:[["","1A4xycZQmjNOFgcewQx7tx1qAE7EWjvEg"]]},
+  {t:"Elvarim: Cinnamon vs Garlic", s:"Skeleton story animation · 3-hook test", c:"anim", c1:"#4e1a0c",
+   v:[["Hook 1","1iXYypyjnZl7eHrlPahAnHEsbaUsoJ4mm"],["Hook 2","1fFdDA_EWeEm95Tr4mR0oTn9w9nMB77g9"],["Hook 3","1ZwjCZwgnm3B-Zml_kEbIDX1GQZ5Vjr_y"]]},
   // ---- UGC & CREATOR ----
   {t:"CleanNutra Magnesium", s:"AI UGC · 3 avatar variants", c:"ugc", reel:1, c1:"#5c1a10",
    v:[["Avatar 1","1V4JgSJe59FhTD6uMOedTBLsbowjOSZG7"],["Avatar 2","152sfWZ3hHFQ7b8VfVQlmd28Ixees8QwV"],["Avatar 3","1NzGhoY86rO8kjht7fGyAAsl9qQaHnesB"]]},
-  {t:"AUVERA", s:"AI UGC · testimonial", c:"ugc", reel:1, c1:"#4d0d1c", v:[["","1ks0fxII_8QbQJERu-ndu6RXindyHrCQ8"]]},
+  {t:"AUVERA", s:"AI UGC · testimonial", c:"ugc", c1:"#4d0d1c", v:[["","1ks0fxII_8QbQJERu-ndu6RXindyHrCQ8"]]},
   {t:"NOW Foods Fish Oil", s:"AI UGC · supplement", c:"ugc", c1:"#5a1508", v:[["","1igAl6flH3NTaWnP1BsA3fBQIFrXiTJc8"]]},
   {t:"Rhona TravelVac", s:"AI UGC · travel gadget", c:"ugc", c1:"#3f0a10", v:[["","1HbO8LnQEl0WE491q7Ocd6l20-tXt0yj2"]]},
   {t:"Dr. Daily", s:"AI UGC · supplement", c:"ugc", c1:"#5a0f17", v:[["","1K2vHsA7KsrORGpLi7MKGlW-Ubpp76YVW"]]},
@@ -481,7 +488,7 @@ const W = [
   // ---- STATIC ----
   {t:"Steppers", s:"Static image ad · insoles", c:"img", img:1, c1:"#5e1410", v:[["","1yGAxtInf28EDRC4J8_LoxOuDZlFmSTa6"]]},
 ];
-const CATS = [["all","All"],["broll","VO + B-roll"],["ugc","UGC & creator"],["anim","AI animation"],["drama","Drama"],["img","Image ads"]];
+const CATS = [["all","All"],["anim","AI animation"],["song","AI song"],["broll","VO + B-roll"],["ugc","UGC & creator"],["drama","Drama"],["img","Image ads"]];
 const CATNAME = Object.fromEntries(CATS);
 
 const thumb = id => `https://drive.google.com/thumbnail?id=${id}&sz=w720`;
