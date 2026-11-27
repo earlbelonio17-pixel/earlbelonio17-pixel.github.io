@@ -262,7 +262,7 @@ footer em{font-style:normal;color:var(--red2)}
         <a class="btn g" href="#work">See the work</a>
       </div>
       <div class="who">
-        <div><b>40+</b>Ads in the portfolio</div>
+        <div><b>30+</b>Ads in the portfolio</div>
         <div><b>3–4</b>Hooks per ad</div>
         <div><b>6</b>Ad styles</div>
       </div>
@@ -309,8 +309,8 @@ footer em{font-style:normal;color:var(--red2)}
       <div class="term reveal" aria-label="Example production session">
         <div class="tbar"><i></i><i></i><i></i><span>production-session · supplement ad</span></div>
         <div class="tlog" id="tlog">
-          <div class="tl"><span class="k">brief</span><span class="v">Lymphatic drainage capsules · women 35+ · 30s vertical<small>Script + product shots received</small></span></div>
-          <div class="tl"><span class="k">research</span><span class="v">Pulled 6 pain-point angles from reviews and competitor ads<small>Picked 4: puffiness, heavy legs, morning face, “nothing worked”</small></span></div>
+          <div class="tl"><span class="k">brief</span><span class="v">Aged garlic supplement · adults 50+ · 45s vertical<small>Script + product shots received</small></span></div>
+          <div class="tl"><span class="k">research</span><span class="v">Pulled 6 pain-point angles from reviews and competitor ads<small>Picked 4: cholesterol, energy, heart worry, “nothing worked”</small></span></div>
           <div class="tl"><span class="k">hooks</span><span class="v">Wrote 4 opening hooks, each paired with the same body<small>Hook 1 original · Hook 2 · Hook 3 · Hook 4</small></span></div>
           <div class="tl"><span class="k">lock</span><span class="v">Character sheet + product sheet locked<small>Same face, same bottle, every shot</small></span></div>
           <div class="tl"><span class="k">generate</span><span class="v">MCP → video model · 4 hooks + shared body rendered<small>Re-rolled 2 shots for hand and label accuracy</small></span></div>
@@ -449,18 +449,16 @@ footer em{font-style:normal;color:var(--red2)}
 // ---- PORTFOLIO DATA (Google Drive file IDs) ----
 // To add a video: share it in Drive as "Anyone with the link", copy the ID from its URL, and add an entry.
 const W = [
-  // ---- AI ANIMATION · HIGHLIGHTS ----
-  {t:"Elvarim Aged Garlic", s:"Skeleton story animation · 3-hook test", c:"anim", reel:1, feat:1, c1:"#5e1608",
-   v:[["Hook 1","1H-h44nzE9mu6_TYAYMZ-dVxxEFIgtjEn"],["Hook 2","1yjJ1Btt69d3IT6FYkYtLX6PY6PyUHyJ1"],["Hook 3","1tVIDUQHv2XIOkw113-VTno-6Blvinpex"]]},
+  // ---- HIGHLIGHTS ----
+  {t:"Elvarim Skeleton Story", s:"AI animation · skeleton story ad", c:"anim", reel:1, feat:1, c1:"#5e1608", v:[["","17zYWZMjpsriQhN9QLsLCw-dVh-_iDmIk"]]},
+  {t:"Elvarim Talking Head", s:"AI talking head · presenter ad", c:"ugc", reel:1, feat:1, c1:"#4a1a12", v:[["","1muRodxV9XQd6YwdR8kn5GAHQzk5Pi_oj"]]},
   {t:"UMAEZ", s:"Pixar-style story song ad", c:"song", reel:1, feat:1, c1:"#5a2a10", v:[["","1FrHcvJRgyL9Y8Rx7ttx5Dg05Eh1GNV0j"]]},
   // ---- VO + B-ROLL ----
-  {t:"Sculptique Lymphatic Capsules", s:"VO + B-roll · 4-hook test", c:"broll", reel:1, feat:1, c1:"#6b0f1a",
-   v:[["Hook 1","1cOi04bdGGElYAhZ3HNNJlDCKXWtjAD0v"],["Hook 2","16r30kTZis1uH0ELTnq4UFcCh0USj0Zk9"],["Hook 3","1ZfNsN6dkUZtzVoQ1DzvR4Nb3pkVv85QF"],["Hook 4","1TL-rN-_ln0chhJe7wuEjuYFkPm5cYaJK"]]},
   {t:"Curadose", s:"VO + B-roll · hair regrowth · 3-hook test", c:"broll", reel:1, feat:1, c1:"#6a0d18",
    v:[["Hook 1","13_8CU-VNyLDBGaHiQD_O_Z7gkksBOSKc"],["Hook 2","1ri8Cw4GjQGrQ0WgnJioK-PnINcYhDYuJ"],["Hook 3","1k73A2S-ZezYT0NZCFAaxz1u0Y6Y90XjK"]]},
+  {t:"Elvarim Trial", s:"VO + B-roll · expert + split screen", c:"broll", reel:1, c1:"#4a1410", v:[["","1rP4vpj9EIVRvkz_qlwMz6VcEAu4ioqOr"]]},
   {t:"Elliosa", s:"VO + B-roll · grip socks · 2 ads", c:"broll", c1:"#5c1420",
    v:[["Ad 1","1na6Uf7ILK_a-H8DPTb6zPFoFjub6obsN"],["Ad 2","1T3fg_1yA79aDeOOigfZbDxr1rOrOKwo-"]]},
-  {t:"Elvarim Trial", s:"VO + B-roll · expert + split screen", c:"broll", reel:1, c1:"#4a1410", v:[["","1rP4vpj9EIVRvkz_qlwMz6VcEAu4ioqOr"]]},
   {t:"Soundboks", s:"B-roll · portable speaker", c:"broll", c1:"#4e0e0a", v:[["","1bgNQnDD2NBg3GlM1D4jDcI_uc3PCZW_U"]]},
   // ---- DRAMA ----
   {t:"Drama Ad", s:"Short drama · 3-hook test", c:"drama", reel:1, c1:"#4a0c12",
@@ -471,14 +469,12 @@ const W = [
   {t:"Hale Cream", s:"3D animation · skincare story", c:"anim", reel:1, c1:"#5a0a24", v:[["","1KYvGPWSeq9Nj-QeDgM7wvuP-BMcdW88_"]]},
   {t:"Hair Peps", s:"3D animation · mascot ad", c:"anim", c1:"#61140e", v:[["","1SA0DVEc2701M0Up750T1-AYvJCI_To--"]]},
   {t:"Elliosa 3D", s:"3D animation · activewear", c:"anim", c1:"#5c1420", v:[["","1A4xycZQmjNOFgcewQx7tx1qAE7EWjvEg"]]},
-  {t:"Elvarim: Cinnamon vs Garlic", s:"Skeleton story animation · 3-hook test", c:"anim", c1:"#4e1a0c",
-   v:[["Hook 1","1iXYypyjnZl7eHrlPahAnHEsbaUsoJ4mm"],["Hook 2","1fFdDA_EWeEm95Tr4mR0oTn9w9nMB77g9"],["Hook 3","1ZwjCZwgnm3B-Zml_kEbIDX1GQZ5Vjr_y"]]},
   // ---- UGC & CREATOR ----
   {t:"CleanNutra Magnesium", s:"AI UGC · 3 avatar variants", c:"ugc", reel:1, c1:"#5c1a10",
    v:[["Avatar 1","1V4JgSJe59FhTD6uMOedTBLsbowjOSZG7"],["Avatar 2","152sfWZ3hHFQ7b8VfVQlmd28Ixees8QwV"],["Avatar 3","1NzGhoY86rO8kjht7fGyAAsl9qQaHnesB"]]},
   {t:"AUVERA", s:"AI UGC · testimonial", c:"ugc", c1:"#4d0d1c", v:[["","1ks0fxII_8QbQJERu-ndu6RXindyHrCQ8"]]},
-  {t:"NOW Foods Fish Oil", s:"AI UGC · supplement", c:"ugc", c1:"#5a1508", v:[["","1igAl6flH3NTaWnP1BsA3fBQIFrXiTJc8"]]},
   {t:"Rhona TravelVac", s:"AI UGC · travel gadget", c:"ugc", c1:"#3f0a10", v:[["","1HbO8LnQEl0WE491q7Ocd6l20-tXt0yj2"]]},
+  {t:"NOW Foods Fish Oil", s:"AI UGC · supplement", c:"ugc", c1:"#5a1508", v:[["","1igAl6flH3NTaWnP1BsA3fBQIFrXiTJc8"]]},
   {t:"Dr. Daily", s:"AI UGC · supplement", c:"ugc", c1:"#5a0f17", v:[["","1K2vHsA7KsrORGpLi7MKGlW-Ubpp76YVW"]]},
   {t:"Keyla", s:"AI UGC · talking head", c:"ugc", c1:"#5b1220", v:[["","1EqOsUuKdXV8fXmK1ekXG92Lv6DQMU799"]]},
   {t:"Kauffman", s:"AI UGC · talking head", c:"ugc", c1:"#3d0a14", v:[["","1AUFBK0J6yzB2d15GaWc448PRyToCCvgM"]]},
@@ -488,7 +484,7 @@ const W = [
   // ---- STATIC ----
   {t:"Steppers", s:"Static image ad · insoles", c:"img", img:1, c1:"#5e1410", v:[["","1yGAxtInf28EDRC4J8_LoxOuDZlFmSTa6"]]},
 ];
-const CATS = [["all","All"],["anim","AI animation"],["song","AI song"],["broll","VO + B-roll"],["ugc","UGC & creator"],["drama","Drama"],["img","Image ads"]];
+const CATS = [["all","All"],["anim","AI animation"],["song","AI song"],["broll","VO + B-roll"],["ugc","AI UGC & talking head"],["drama","Drama"],["img","Image ads"]];
 const CATNAME = Object.fromEntries(CATS);
 
 const thumb = id => `https://drive.google.com/thumbnail?id=${id}&sz=w720`;
